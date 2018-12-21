@@ -12,7 +12,7 @@
   touch {production,staging}  group_vars/group{1,2}.yml host_vars/host{1,2}.yml
   }
 AND
-touch {site,web,db}.yml
+touch {site,web,db}.yml ansible.cfg
 touch roles/{common,role1,role2}/{tasks,handlers,vars,defaults,meta}/main.yml
 touch roles/{common,role1,role2}/templates/sample.conf.j2
 touch roles/{common,role1,role2}/files/sample.{txt,sh}
