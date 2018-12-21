@@ -1,0 +1,32 @@
+PHP
+PostgreSQL /BDR
+Memcache
+Redis
+RabbitMQ
+NGINX + php-fpm
+HAPROXY
+Ansible
+Terraform
+Consul
+Consul-template
+k8s + helm
+ELK
+Prometheus
+Nagios
+Grafana
+Newrelic
+Git
+Mercurial
+AWS:
+  EC2
+  EBS
+  S3
+  Route53
+  SES
+  RDS
+  Elastic Cache
+Pagerduty
+Slack
+Ubuntu
+Jenkins
+Groovy
