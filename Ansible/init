@@ -1,0 +1,19 @@
+{
+  {
+  # https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#alternative-directory-layout
+  mkdir -p inventories/{production,staging}/{group_vars,host_vars} library/ module_utils/ filter_plugins/ roles/{common,role1,role2}/{tasks,handlers,templates,files,vars,defaults,meta,library,module_utils,lookup_plugins}
+  touch inventories/{production,staging}/hosts
+  touch inventories/{production,staging}/group_vars/group{1,2}.yml
+  touch inventories/{production,staging}/host_vars/host{1,2}.yml
+  
+  OR
+  # https://docs.ansible.com/ansible/latest/user_guide/playbooks_best_practices.html#directory-layout
+  mkdir -p {group_vars,host_vars} library/ module_utils/ filter_plugins/ roles/{common,role1,role2}/{tasks,handlers,templates,files,vars,defaults,meta,library,module_utils,lookup_plugins}
+  touch {production,staging}  group_vars/group{1,2}.yml host_vars/host{1,2}.yml
+  }
+AND
+touch {site,web,db}.yml
+touch roles/{common,role1,role2}/{tasks,handlers,vars,defaults,meta}/main.yml
+touch roles/{common,role1,role2}/templates/sample.conf.j2
+touch roles/{common,role1,role2}/files/sample.{txt,sh}
+}
